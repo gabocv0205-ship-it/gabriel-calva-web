@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ab. Gabriel Calva | Asesoría Legal y Notarial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap');
+        
+        :root {
+            --azul-profundo: #0f172a;
+            --dorado-elegante: #c5a059;
+            --fondo-claro: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--fondo-claro);
+            color: #334155;
+        }
+
+        h1, h2, h3, .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Estilos de botones de enlaces */
+        .link-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .link-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 4px; height: 100%;
+            background: var(--dorado-elegante);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+            transform-origin: bottom;
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.1);
+            border-color: var(--dorado-elegante);
+        }
+
+        .link-card:hover::before {
+            transform: scaleY(1);
+        }
+
+        .profile-img-container {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            margin: 0 auto;
+        }
+
+        .profile-img-container::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border: 2px solid var(--dorado-elegante);
+            border-radius: 50%;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+
+    <div class="h-64 w-full bg-[#0f172a] relative overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#d4af37 1px, transparent 1px); background-size: 20px 20px;"></div>
+        <div class="z-10 text-center text-white mt-8">
+            <p class="text-[#c5a059] tracking-[0.2em] text-xs font-bold uppercase mb-2">Despacho Digital</p>
+        </div>
+    </div>
+
+    <main class="max-w-2xl mx-auto w-full px-6 -mt-24 relative z-20 flex-grow">
+        
+        <div class="text-center mb-10">
+            <div class="profile-img-container mb-6">
+                <img src="https://via.placeholder.com/160/1e293b/d4af37?text=GC" alt="Ab. Gabriel Calva" class="w-full h-full object-cover rounded-full relative z-10 border-4 border-white shadow-lg">
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-bold text-[#0f172a] mb-2">Ab. Gabriel Andrés Calva Vásquez</h1>
+            <p class="text-slate-500 font-medium tracking-wide mb-4">Experto en Derecho Notarial, Sucesorio y B2B Legal-Tech</p>
+            
+            <p class="text-sm text-slate-600 leading-relaxed max-w-lg mx-auto">
+                Consultoría jurídica especializada y soluciones tecnológicas para despachos. Acompañamiento integral con precisión y seguridad jurídica.
+            </p>
+        </div>
+
+        <div class="space-y-4 mb-12">
+            
+            <a href="https://wa.me/593XXXXXXXXX" target="_blank" class="link-card block rounded-xl p-5 flex items-center group">
+                <div class="w-12 h-12 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mr-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="flex-grow">
+                    <h3 class="font-bold text-[#0f172a] text-lg">Consultoría Directa</h3>
+                    <p class="text-xs text-slate-500">Contáctame por WhatsApp para asesoría legal</p>
+                </div>
+                <i class="fas fa-chevron-right text-slate-300 group-hover:text-[#c5a059] transition-colors"></i>
+            </a>
+
+            <a href="URL_DE_TU_CANAL" target="_blank" class="link-card block rounded-xl p-5 flex items-center group">
+                <div class="w-12 h-12 rounded-full bg-red-50 text-red-600 flex items-center justify-center text-xl mr-4 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <div class="flex-grow">
+                    <h3 class="font-bold text-[#0f172a] text-lg">Clases y Análisis Legal</h3>
+                    <p class="text-xs text-slate-500">Suscríbete a mi canal de YouTube</p>
+                </div>
+                <i class="fas fa-chevron-right text-slate-300 group-hover:text-[#c5a059] transition-colors"></i>
+            </a>
+
+            <a href="URL_DE_TU_INSTAGRAM" target="_blank" class="link-card block rounded-xl p-5 flex items-center group">
+                <div class="w-12 h-12 rounded-full bg-fuchsia-50 text-fuchsia-600 flex items-center justify-center text-xl mr-4 group-hover:bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 group-hover:text-white transition-all">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="flex-grow">
+                    <h3 class="font-bold text-[#0f172a] text-lg">Comunidad Legal</h3>
+                    <p class="text-xs text-slate-500">Tips, actualizaciones y el día a día en la Notaría</p>
+                </div>
+                <i class="fas fa-chevron-right text-slate-300 group-hover:text-[#c5a059] transition-colors"></i>
+            </a>
+
+            <a href="URL_DE_TU_DRIVE" target="_blank" class="link-card block rounded-xl p-5 flex items-center group">
+                <div class="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-xl mr-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <i class="fab fa-google-drive"></i>
+                </div>
+                <div class="flex-grow">
+                    <h3 class="font-bold text-[#0f172a] text-lg">Biblioteca de Recursos</h3>
+                    <p class="text-xs text-slate-500">Descarga minutas, guías y documentos gratuitos</p>
+                </div>
+                <i class="fas fa-chevron-right text-slate-300 group-hover:text-[#c5a059] transition-colors"></i>
+            </a>
+
+            <a href="URL_DE_TU_SISTEMA_SIPLAC" target="_blank" class="link-card block rounded-xl p-5 flex items-center group border-[#0f172a] bg-slate-50">
+                <div class="w-12 h-12 rounded-full bg-[#0f172a] text-[#c5a059] flex items-center justify-center text-xl mr-4">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="flex-grow">
+                    <h3 class="font-bold text-[#0f172a] text-lg">GAME-LEGAL SIPLAC</h3>
+                    <p class="text-xs text-slate-600 font-semibold">Descubre mi software de prevención para Notarías</p>
+                </div>
+                <i class="fas fa-external-link-alt text-slate-400 group-hover:text-[#c5a059] transition-colors"></i>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="py-8 text-center text-xs text-slate-400">
+        <p>© 2026 Ab. Gabriel Andrés Calva Vásquez. Todos los derechos reservados.</p>
+        <p class="mt-1">Loja, Ecuador</p>
+    </footer>
+
+</body>
+</html>
